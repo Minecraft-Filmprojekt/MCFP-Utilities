@@ -1,0 +1,8 @@
+name: MCFPUtilities
+version: 1.0
+main: de.jaskerx.mcfp.utilities.main.Main
+author: JaskerX
+
+commands:
+  restartwhenempty:
+    description: Startet den Server neu, sobald kein Spieler mehr auf dem Server ist. Kann durch erneutes Ausführen des Commands abgebrochen werden.
