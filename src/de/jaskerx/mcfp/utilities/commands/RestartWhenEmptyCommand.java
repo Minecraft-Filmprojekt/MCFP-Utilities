@@ -16,7 +16,7 @@ public class RestartWhenEmptyCommand implements CommandExecutor {
 	Timer t;
 	
 	@Override
-	public boolean onCommand(CommandSender sender, Command command, String name, String[] args) {
+	public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
 		
 		if(!sender.hasPermission("mcfp.utilities.restart")) {
 			sender.sendMessage(Constants.CHAT_PREFIX + Constants.CHAT_MESSAGE_COLOR_ERROR +
@@ -34,11 +34,11 @@ public class RestartWhenEmptyCommand implements CommandExecutor {
 					}
 				}
 			}, 0, 60000);
-			sender.sendMessage(Constants.CHAT_PREFIX + Constants.CHAT_MESSAGE_COLOR +
+			sender.sendMessage(Constants.CHAT_PREFIX +
 								"Der Server wird nun neugestartet, wenn kein Spieler mehr online ist.");
 		} else {
 			t.cancel();
-			sender.sendMessage(Constants.CHAT_PREFIX + Constants.CHAT_MESSAGE_COLOR +
+			sender.sendMessage(Constants.CHAT_PREFIX +
 								"Der Server wird nicht mehr automatisch neugestartet.");
 		}
 		

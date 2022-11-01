@@ -6,3 +6,9 @@ author: JaskerX
 commands:
   restartwhenempty:
     description: Startet den Server neu, sobald kein Spieler mehr auf dem Server ist. Kann durch erneutes Ausführen des Commands abgebrochen werden.
+  plugin:
+    description: Verwalte die Gruppen von Plugins, die bei /plugins angezeigt werden.
+    usage: /plugin [name] group [set/get/clear] (nur bei 'set' [group])
+  plugingroups:
+    description: Füge neue Gruppen hinzu oder lösche Gruppen, nach denen Plugins bei /plugins gefiltert werden können.
+    usage: /plugingroups [add/get/remove] (nur bei 'remove' [name]) (optional nur bei 'remove' [ignore])
